@@ -3,7 +3,7 @@ export default function GalacticAge(earthYear) {
 }
 
 GalacticAge.prototype.mercuryAge = function() {
-  let earthYear = 10;
+  let earthYear = 20;
   let mercuryYear = parseFloat(Number((earthYear / .24).toFixed(2)));
   return mercuryYear;
 }
