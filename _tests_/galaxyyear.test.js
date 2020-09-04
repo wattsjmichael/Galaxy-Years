@@ -38,20 +38,14 @@ describe ('GalaxyAge', ()=> {
   });
 
   test("Should convert Earth Age of 20 to Venus Life Expentancy Years (129.03 Venus Years)", ()=>{
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.venusLE()).toEqual(96.77);
+    expect(reusableGalaxyAge.venusLE()).toEqual(96.77);
   });
 
   test("Should convert Earth Age of 20 to Mars Life Expentancy Years (42.55 Mars Years)", ()=>{
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.marsLE()).toEqual(31.91);
+    expect(reusableGalaxyAge.marsLE()).toEqual(31.91);
   });
 
   test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.jupiterLE()).toEqual(5.06);
+    expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
   });
-
-
-
 });
