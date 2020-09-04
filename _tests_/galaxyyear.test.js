@@ -39,4 +39,11 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.venusLE()).toEqual(96.77);
   });
 
+  test("Should convert Earth Age of 20 to Mars Life Expentancy Years (42.55 Mars Years)", ()=>{
+    let galacticAge = new GalacticAge(20);
+    expect(galacticAge.marsLE()).toEqual(31.91);
+  });
+
+
+
 });
