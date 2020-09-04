@@ -1,8 +1,17 @@
 import  GalacticAge from "./../src/galaxyyear.js"
 
 
-describe ('GalaxyYear', ()=> {
+describe ('GalaxyAge', ()=> {
+  let reusableGalaxyAge;
+  beforeEach(()=>{
+    reusableGalaxyAge = new GalacticAge(20,);
+
+  });
   
+  test('should show how beforeEach() works',()=>{
+    console.log(reusableGalaxyAge);
+  });
+
   test('should return earth year age', () =>{
     let galacticAge = new GalacticAge(10);
     expect(galacticAge.earthYear).toEqual(10);
