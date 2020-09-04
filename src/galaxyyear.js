@@ -1,8 +1,9 @@
-export default function GalacticAge(earthYear, mercuryYear, venusYear, marsYear) {
+export default function GalacticAge(earthYear, mercuryYear, venusYear, marsYear, jupiterYear) {
   this.earthYear = earthYear;
   this.mercuryYear = mercuryYear;
   this.venusYear = venusYear;
   this.marsYear = marsYear;
+  this.jupiterYear = jupiterYear;
 }
 
 GalacticAge.prototype.mercuryAge = function() {
@@ -23,6 +24,11 @@ GalacticAge.prototype.marsAge = function() {
   return marsYear;
 }
 
+GalacticAge.prototype.jupiterAge = function() {
+  let earthYear = 20
+  let jupiterYear = parseFloat(Number(earthYear / 11.86).toFixed(2));
+  return jupiterYear;
+}
 
 
  
