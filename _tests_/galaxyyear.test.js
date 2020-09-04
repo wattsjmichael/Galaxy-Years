@@ -23,7 +23,7 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.marsAge()).toEqual(10.64);
   });
 
-  test("Should return Earth Age of 20 as 1.69 Jupiter Years", ()=> {
+  test("Should return Earth Age of 20 as 1.69 Jupier Years", ()=> {
     let galacticAge = new GalacticAge(20);
     expect(galacticAge.jupiterAge()).toEqual(1.69);
   })
