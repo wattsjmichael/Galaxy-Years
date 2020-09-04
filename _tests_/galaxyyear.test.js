@@ -1,5 +1,6 @@
 import  GalacticAge from "./../src/galaxyyear.js"
 
+
 describe ('GalaxyYear', ()=> {
   
   test('should return earth year age', () =>{
@@ -23,8 +24,14 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.marsAge()).toEqual(10.64);
   });
 
-  test("Should return Earth Age of 20 as 1.69 Jupier Years", ()=> {
+  test("Should return Earth Age of 20 as 1.69 Jupiter Years", ()=> {
     let galacticAge = new GalacticAge(20);
     expect(galacticAge.jupiterAge()).toEqual(1.69);
-  })
+  });
+
+  test("Should convert Earth Age of 10 to Mercury Life Expentancy Years", ()=>{
+    let galacticAge = new GalacticAge(10);
+    expect(galacticAge.mercuryLE()).toEqual(333.33);
+  });
+
 });
