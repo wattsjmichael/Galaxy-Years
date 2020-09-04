@@ -22,23 +22,19 @@ describe ('GalaxyAge', ()=> {
   });
   
   test("Should return Earth Age of 20 years as 32.26 Venus Years", ()=>{
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.venusAge()).toEqual(32.26);
+    expect(reusableGalaxyAge.venusAge()).toEqual(32.26);
   });
 
   test("Should return Earth Age of 20 years as 10.64 Mars Years", ()=>{
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.marsAge()).toEqual(10.64);
+    expect(reusableGalaxyAge.marsAge()).toEqual(10.64);
   });
 
   test("Should return Earth Age of 20 as 1.69 Jupiter Years", ()=> {
-    let galacticAge = new GalacticAge(20);
-    expect(galacticAge.jupiterAge()).toEqual(1.69);
+    expect(reusableGalaxyAge.jupiterAge()).toEqual(1.69);
   });
 
-  test("Should convert Earth Age of 10 to Mercury Life Expentancy Years (333.33 Mercury Years)", ()=>{
-    let galacticAge = new GalacticAge(10);
-    expect(galacticAge.mercuryLE()).toEqual(291.66);
+  test("Should convert Earth Age of 20 to Mercury Life Expentancy Years (333.33 Mercury Years)", ()=>{
+    expect(reusableGalaxyAge.mercuryLE()).toEqual(250.00);
   });
 
   test("Should convert Earth Age of 20 to Venus Life Expentancy Years (129.03 Venus Years)", ()=>{
