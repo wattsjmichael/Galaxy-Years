@@ -20,6 +20,6 @@ describe ('GalaxyYear', ()=> {
 
   test("should return Earth Age of 20 years as 10.64 Mars Years", ()=>{
     let galacticAge = new GalacticAge(20);
-    expect(galacticAge.marsAge()).toEqual(10.84);
+    expect(galacticAge.marsAge()).toEqual(10.64);
   });
 });
