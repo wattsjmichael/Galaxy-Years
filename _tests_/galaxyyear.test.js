@@ -1,12 +1,15 @@
-import { GalaxyYear } from "./../src/galaxyyear.js"
+import  GalaxyYear from "./../src/galaxyyear.js"
 
-describe ('Year', () => {
-
+describe ('GalaxyYear', ()=> {
   test('should return earth year age', () =>{
-    let earthYears = new earthYears (20);
-  });
-  test("should return 41.68 Mercury Years if your 10 Earth Years old")
-    let earthYears = new earthYears (10);
-    expect(earthYears.mercuryYears()).toBe(41.68)
+    let earthAge = 20;
+    expect(earthAge).toEqual(20);
+    console.log(earthAge)
 
 });
+  
+});
+//   test("should return 41.68 Mercury Years if your 10 Earth Years old")
+//     expect(GalaxyYear.mercuryYears(10)).toBe(41.68)
+
+// });

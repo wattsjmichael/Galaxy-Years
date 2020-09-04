@@ -1,9 +1,11 @@
-export class GalaxyYear (earthYears){
-  this.earthYears = earthYears;
+export function GalaxyYear(earthAge){
+  this.earthAge = earthAge;
 
 }
 
 GalaxyYear.prototype.mercuryYears = function() {
-  let mercuryYears = (earthYears / .28);
-  return mercuryYears;
+  (this.earthAge / .28);
+  return this.earthAge;
 }
+
+
