@@ -8,13 +8,18 @@ describe ('GalaxyYear', ()=> {
     console.log(galacticAge.earthYear);
   });
     
-  test ('Should return your Earth age of 10 years in 41.68 Mercury Years', ()=>{
+  test ('Should return Earth age of 10 years as 41.68 Mercury Years', ()=>{
     let galacticAge= new GalacticAge(10); 
     expect(galacticAge.mercuryAge()).toEqual(41.67);
   });
   
-  test("Should return your Earth Age of 20 years in 32.26 Venus Years", ()=>{
+  test("Should return Earth Age of 20 years as 32.26 Venus Years", ()=>{
     let galacticAge = new GalacticAge(20);
     expect(galacticAge.venusAge()).toEqual(32.26);
+  });
+
+  test("should return Earth Age of 20 years as 10.64 Mars Years", ()=>{
+    let galacticAge = new GalacticAge(20);
+    expect(galacticAge.marsAge()).toEqual(10.84);
   });
 });
