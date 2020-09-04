@@ -46,7 +46,7 @@ describe ('GalaxyYear', ()=> {
 
   test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
     let galacticAge = new GalacticAge(20);
-    expect(galacticAge.jupiterLE()).toEqual(5.05);
+    expect(galacticAge.jupiterLE()).toEqual(5.06);
   });
 
 

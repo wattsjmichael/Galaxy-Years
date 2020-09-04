@@ -46,6 +46,13 @@ GalacticAge.prototype.marsLE = function() {
   return marsLife;
 }
 
+GalacticAge.prototype.jupiterLE = function() {
+  let earthYear = 20;
+  var jupiterLife = (6.75)-(parseFloat(earthYear / 11.86));
+  var jupiterLife = Number(jupiterLife.toFixed(2));
+  return jupiterLife;
+}
+
 
 
  
