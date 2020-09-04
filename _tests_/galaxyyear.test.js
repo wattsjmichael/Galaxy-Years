@@ -34,4 +34,9 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.mercuryLE()).toEqual(291.66);
   });
 
+  test("Should convert Earth Age of 20 to Venus Life Expentancy Years (129.03 Venus Years)", ()=>{
+    let galacticAge = new GalacticAge(20);
+    expect(galacticAge.venusLE()).toEqual(96.77);
+  });
+
 });
