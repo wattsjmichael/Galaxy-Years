@@ -1,13 +1,6 @@
-export class GalaxyYear {
-  constructor(earthAge, mercuryAge,){
+export function GalaxyYear(earthAge) {
   this.earthAge = earthAge;
-  this.mercuryAge = mercuryAge;
 }
 
 
-mercuryYears(){
-
-}
-}
-
-
+ 
