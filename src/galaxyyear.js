@@ -1,9 +1,5 @@
-export default function GalacticAge(earthYear, mercuryYear, venusYear, marsYear, jupiterYear) {
+export default function GalacticAge(earthYear) {
   this.earthYear = earthYear;
-  this.mercuryYear = mercuryYear;
-  this.venusYear = venusYear;
-  this.marsYear = marsYear;
-  this.jupiterYear = jupiterYear;
 }
 
 GalacticAge.prototype.mercuryAge = function() {
@@ -41,6 +37,13 @@ GalacticAge.prototype.venusLE = function() {
   var venusLife = (129.03)-(parseFloat(earthYear / .62));
   var venusLife = Number(venusLife.toFixed(2));
   return venusLife;
+}
+
+GalacticAge.prototype.marsLE = function() {
+  let earthYear = 20;
+  var marsLife = (42.55)-(parseFloat(earthYear / 1.88));
+  var marsLife = Number(marsLife.toFixed(2));
+  return marsLife;
 }
 
 
