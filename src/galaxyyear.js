@@ -1,11 +1,13 @@
-export function GalaxyYear(earthAge){
+export class GalaxyYear {
+  constructor(earthAge, mercuryAge,){
   this.earthAge = earthAge;
-
+  this.mercuryAge = mercuryAge;
 }
 
-GalaxyYear.prototype.mercuryYears = function() {
-  (this.earthAge / .28);
-  return this.earthAge;
+
+mercuryYears(){
+
+}
 }
 
 
