@@ -13,14 +13,12 @@ describe ('GalaxyAge', ()=> {
   });
 
   test('should return earth year age', () =>{
-    let galacticAge = new GalacticAge(10);
-    expect(galacticAge.earthYear).toEqual(10);
-    console.log(galacticAge.earthYear);
+    expect(reusableGalaxyAge.earthYear).toEqual(20);
+    console.log(reusableGalaxyAge.earthYear);
   });
     
-  test ('Should return Earth age of 10 years as 41.68 Mercury Years', ()=>{
-    let galacticAge= new GalacticAge(10); 
-    expect(galacticAge.mercuryAge()).toEqual(41.67);
+  test ('Should return Earth age of 20 years as 41.68 Mercury Years', ()=>{
+    expect(reusableGalaxyAge.mercuryAge()).toEqual(83.33);
   });
   
   test("Should return Earth Age of 20 years as 32.26 Venus Years", ()=>{
