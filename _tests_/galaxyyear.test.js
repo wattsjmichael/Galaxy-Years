@@ -9,8 +9,12 @@ describe ('GalaxyYear', ()=> {
   });
     
   test ('Should return your Earth age of 10 years in 41 Mercury Years', ()=>{
-  const galacticAge= new GalacticAge(10); 
+  let galacticAge= new GalacticAge(10); 
   expect(galacticAge.mercuryAge()).toEqual(41);
   });
+  
+  test("Should return your Earth Age of 20 years in 33 Venus Years")
+  let galacticAge = new GalacticAge(20);
+  expect(galacticAge.venusAge()).toEqual(33);
 
 });
