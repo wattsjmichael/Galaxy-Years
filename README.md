@@ -30,25 +30,25 @@ _OR_
 >* Input: "Steve"
 >* Output: "Please, enter a number"
 
-* The program returns your age in Mercury Years (.24 Earth Years)
->* Input: 10 Earth Years
->* Output: 41.68 Mercury Years
+* The program returns your Earth age in Mercury Years (.24 Earth Years)
+>* Input: 20 Earth Years
+>* Output: 83.33 Mercury Years
 
-* The program returns your age in Venus years (.62 Earth Years)
+* The program returns your Earth age in Venus years (.62 Earth Years)
 >* Input: 20 Earth Years
 >* Output: 32.26 Venus Years
 
-* The Program returns your age in Mars Years (1.88 Earth Years)
+* The Program returns your Earth age in Mars Years (1.88 Earth Years)
 >* Input: 20 Earth Years
 >* Output: 10.64 Mars Years
 
-* The program returns your age in Jupiter years (11.86 Earth Years)
+* The program returns your Earth age in Jupiter years (11.86 Earth Years)
 >* Input: 20 Earth Years
 >* Output: 1.69 Jupiter Years
 
 * The program returns your life expentancy (80 Earth Years) in Mercury Years of life expentancy (333.33 Mercury Years )
->* Input: 10 Earth Years
->* Output: 291.65 Mercury Years Expected
+>* Input: 20 Earth Years
+>* Output: 250.00 Mercury Years Expected
 
 * The program returns your life expentancy (80 Earth Years) in Venus Years of life expentancy (129.03 Venus Years)
 >* Input: 20 Earth Years
@@ -60,13 +60,7 @@ _OR_
 
 * The Program returns your life expentancy (80 Earth Years) in Jupiter Years of life expentancy (6.75 Jupiter Years)
 >* Input: 20 Earth Years
->* Output: 5.05 Jupiter Years Expected
-
-
-
-
-
-* If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
+>* Output: 5.06 Jupiter Years Expected
 
 
 

@@ -15,22 +15,22 @@ GalacticAge.prototype.venusAge = function() {
 }
 
 GalacticAge.prototype.marsAge = function() {
-  let earthYear = 20
+  let earthYear = 20;
   let marsYear = parseFloat(Number(earthYear / 1.88).toFixed(2));
   return marsYear;
 }
 
 GalacticAge.prototype.jupiterAge = function() {
-  let earthYear = 20
+  let earthYear = 20;
   let jupiterYear = parseFloat(Number(earthYear / 11.86).toFixed(2));
   return jupiterYear;
 }
 
 GalacticAge.prototype.mercuryLE = function() {
-  let earthYear = 10;
-  var mercuryLife = (333.33)-(parseFloat(earthYear / .24));
-  var mercuryLife = Number(mercuryLife.toFixed(2));
-  return mercuryLife;
+  let earthYear = 20;
+  let mercuryLife = (333.33)-(parseFloat(earthYear / .24));
+  let mercuryLifeExpect = Number(mercuryLife.toFixed(2));
+  return mercuryLifeExpect;
 }
 GalacticAge.prototype.venusLE = function() {
   let earthYear = 20;
