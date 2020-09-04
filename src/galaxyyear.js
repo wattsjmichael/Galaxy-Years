@@ -32,9 +32,15 @@ GalacticAge.prototype.jupiterAge = function() {
 
 GalacticAge.prototype.mercuryLE = function() {
   let earthYear = 10;
-  let mercuryLife = (333.33)-(parseFloat(earthYear / .24));
-  return Number(mercuryLife.toFixed(2));
-
+  var mercuryLife = (333.33)-(parseFloat(earthYear / .24));
+  var mercuryLife = Number(mercuryLife.toFixed(2));
+  return mercuryLife;
+}
+GalacticAge.prototype.venusLE = function() {
+  let earthYear = 20;
+  var venusLife = (129.03)-(parseFloat(earthYear / .62));
+  var venusLife = Number(venusLife.toFixed(2));
+  return venusLife;
 }
 
 
