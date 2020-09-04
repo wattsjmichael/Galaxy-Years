@@ -7,8 +7,9 @@ describe ('GalaxyYear', ()=> {
 
 });
   test("should return 41.68 Mercury Years if your 10 Earth Years old", () =>{
-    let mercuryOld = new GalaxyYear;
-    expect(mercuryOld.mercuryYears()).toBe(41.68);
+    let earthAge = 10
+    earthAge.mercuryYears();
+    expect(mercuryOld.mercuryYears(10)).toBe(41.68);
 });
 
 });
