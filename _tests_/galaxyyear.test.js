@@ -29,9 +29,9 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.jupiterAge()).toEqual(1.69);
   });
 
-  test("Should convert Earth Age of 10 to Mercury Life Expentancy Years", ()=>{
+  test("Should convert Earth Age of 10 to Mercury Life Expentancy Years (333.33 Mercury Years)", ()=>{
     let galacticAge = new GalacticAge(10);
-    expect(galacticAge.mercuryLE()).toEqual(333.33);
+    expect(galacticAge.mercuryLE()).toEqual(291.66);
   });
 
 });

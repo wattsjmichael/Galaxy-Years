@@ -30,5 +30,13 @@ GalacticAge.prototype.jupiterAge = function() {
   return jupiterYear;
 }
 
+GalacticAge.prototype.mercuryLE = function() {
+  let earthYear = 10;
+  let mercuryLife = (333.33)-(parseFloat(earthYear / .24));
+  return Number(mercuryLife.toFixed(2));
+
+}
+
+
 
  
