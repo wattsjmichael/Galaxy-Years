@@ -18,8 +18,13 @@ describe ('GalaxyYear', ()=> {
     expect(galacticAge.venusAge()).toEqual(32.26);
   });
 
-  test("should return Earth Age of 20 years as 10.64 Mars Years", ()=>{
+  test("Should return Earth Age of 20 years as 10.64 Mars Years", ()=>{
     let galacticAge = new GalacticAge(20);
     expect(galacticAge.marsAge()).toEqual(10.64);
   });
+
+  test("Should return Earth Age of 20 as 1.69 Jupiter Years", ()=> {
+    let galacticAge = new GalacticAge(20);
+    expect(galacticAge.jupiterAge()).toEqual(1.69);
+  })
 });
