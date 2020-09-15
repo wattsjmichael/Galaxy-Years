@@ -45,7 +45,10 @@ describe ('GalaxyAge', ()=> {
     expect(reusableGalaxyAge.marsLE()).toEqual(31.91);
   });
 
-  test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
-    expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
-  });
+  // test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
+  //   expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
+  // });
+    test("Should Return an Earth Age of 90 to be .84 jupiter years over life expectancy", ()=>{
+      expect(reusableGalaxyAge.jupiterLE()).toBe("Congrats! you are 0.84 jupiter years over life expectancy!");
+    });
 });

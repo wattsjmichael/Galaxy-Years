@@ -4,11 +4,14 @@ import './css/styles.css';
 import $ from "jquery";
 import  GalacticAge from "./../src/galaxyyear.js";
 
+$(document).ready(function(){
 $("form#age").submit(function (event){
   event.preventDefault();
-})
 
-let earthAge = $("input#age").val;
+
+let earthYear = parseInt($("input#age").val());
 $("#earthAge").text(GalacticAge.earthYear);
 $(".result").show();
 console.log(earthYear);
+});
+});
