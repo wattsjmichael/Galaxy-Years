@@ -60,6 +60,10 @@ _OR_
 >* Input: 20 Earth Years
 >* Output: 5.06 Jupiter Years Expected
 
+* The Program returns an Earth Age of 90 to be .84 jupiter years over life expectancy.
+>* Input: 90 Earth Years
+>* Output: "Congrats! you are 0.84 jupiter years over life expectancy!""
+
 ## Bugs
 
 * User Interface does not work, will add at a later date
