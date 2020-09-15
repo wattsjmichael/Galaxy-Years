@@ -1,58 +1,59 @@
-export default function GalacticAge(earthYear) {
+export default class GalacticAge {
+  constructor(earthYear) {
   this.earthYear = earthYear;
 }
 
-GalacticAge.prototype.mercuryAge = function() {
+mercuryAge() {
   let earthYear = 20;
   let mercuryYear = parseFloat(Number((earthYear / .24).toFixed(2)));
   return mercuryYear;
 }
 
-GalacticAge.prototype.venusAge = function() {
+venusAge() {
   let earthYear = 20;
   let venusYear = parseFloat(Number(earthYear / .62).toFixed(2));
   return venusYear;
 }
 
-GalacticAge.prototype.marsAge = function() {
+marsAge() {
   let earthYear = 20;
   let marsYear = parseFloat(Number(earthYear / 1.88).toFixed(2));
   return marsYear;
 }
 
-GalacticAge.prototype.jupiterAge = function() {
+jupiterAge() {
   let earthYear = 20;
   let jupiterYear = parseFloat(Number(earthYear / 11.86).toFixed(2));
   return jupiterYear;
 }
 
-GalacticAge.prototype.mercuryLE = function() {
+mercuryLE() {
   let earthYear = 20;
   let mercuryLife = (333.33)-(parseFloat(earthYear / .24));
   let mercuryLifeExpect = Number(mercuryLife.toFixed(2));
   return mercuryLifeExpect;
 }
-GalacticAge.prototype.venusLE = function() {
+venusLE() {
   let earthYear = 20;
   var venusLife = (129.03)-(parseFloat(earthYear / .62));
-  var venusLife = Number(venusLife.toFixed(2));
-  return venusLife;
+  var venusLifeExpect = Number(venusLife.toFixed(2));
+  return venusLifeExpect;
 }
 
-GalacticAge.prototype.marsLE = function() {
+marsLE() {
   let earthYear = 20;
   var marsLife = (42.55)-(parseFloat(earthYear / 1.88));
-  var marsLife = Number(marsLife.toFixed(2));
-  return marsLife;
+  var marsLifeExpect = Number(marsLife.toFixed(2));
+  return marsLifeExpect;
 }
 
-GalacticAge.prototype.jupiterLE = function() {
+jupiterLE() {
   let earthYear = 20;
   var jupiterLife = (6.75)-(parseFloat(earthYear / 11.86));
-  var jupiterLife = Number(jupiterLife.toFixed(2));
-  return jupiterLife;
+  var jupiterLifeExpect = Number(jupiterLife.toFixed(2));
+  return jupiterLifeExpect;
 }
-
+}
 
 
  
