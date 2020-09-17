@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1600178076647" clover="3.2.0">
-  <project timestamp="1600178076648" name="All files">
+<coverage generated="1600354994319" clover="3.2.0">
+  <project timestamp="1600354994319" name="All files">
     <metrics statements="31" coveredstatements="30" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="9" elements="42" coveredelements="40" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="galaxyyear.js" path="K:\Epicodus-Projects\GalaxyYears\src\galaxyyear.js">
       <metrics statements="31" coveredstatements="30" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="9"/>
