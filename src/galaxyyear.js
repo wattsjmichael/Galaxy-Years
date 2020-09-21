@@ -48,7 +48,7 @@ marsLE() {
 }
 
 jupiterLE() {
-  let earthYear = 90;
+  let earthYear = 20;
   let jupiterLife = (6.75)-(parseFloat(earthYear / 11.86));
   let jupiterLifeExpect = Math.abs(jupiterLife.toFixed(2));
   if (earthYear >= 80) {
@@ -59,5 +59,3 @@ jupiterLE() {
 }
 }
 
-
- 

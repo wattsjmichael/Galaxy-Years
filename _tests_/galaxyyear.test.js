@@ -4,17 +4,15 @@ import  GalacticAge from "./../src/galaxyyear.js"
 describe ('GalaxyAge', ()=> {
   let reusableGalaxyAge;
   beforeEach(()=>{
-    reusableGalaxyAge = new GalacticAge(20,);
+    reusableGalaxyAge = new GalacticAge(20);
 
   });
   
   test('should show how beforeEach() works',()=>{
-    console.log(reusableGalaxyAge);
   });
 
   test('should return earth year age', () =>{
     expect(reusableGalaxyAge.earthYear).toEqual(20);
-    console.log(reusableGalaxyAge.earthYear);
   });
     
   test ('Should return Earth age of 20 years as 41.68 Mercury Years', ()=>{
@@ -45,10 +43,11 @@ describe ('GalaxyAge', ()=> {
     expect(reusableGalaxyAge.marsLE()).toEqual(31.91);
   });
 
-  // test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
-  //   expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
-  // });
-    test("Should Return an Earth Age of 90 to be .84 jupiter years over life expectancy", ()=>{
-      expect(reusableGalaxyAge.jupiterLE()).toBe("Congrats! you are 0.84 jupiter years over life expectancy!");
+  test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
+    expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
+  });
+
+  test("Should Return an Earth Age of 90 to be .84 jupiter years over life expectancy", ()=>{
+    expect(reusableGalaxyAge.jupiterLE()).toBe("Congrats! you are 0.84 jupiter years over life expectancy!");
     });
 });

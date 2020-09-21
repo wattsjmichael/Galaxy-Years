@@ -11,15 +11,15 @@ A  HTML Website that that figures out how old you are on different planets.
 
 ## Setup/Installation Requirements
 
-* _Navigate your broswer to https://github.com/wattsjmichael/GalaxyYear.git
-* _Download the folder from this repository, and double click on the index.html file to open it in a Browser_
+* _Navigate your broswer to https://github.com/wattsjmichael/GalaxyYear.git_
+* _Download the folder from this repository_
+* _Open folder with VSCode_
+* _Once folder is open, open a terminal and run the command "npm install", making sure you are in the top directory of this directory_
+* _When the install finishes, run the command "npm run start" this will start your server in your web browser_
 
-_OR_
+## Testing
 
-* _Navigate in your console to a installation directory_
-* _Use the command git clone https://github.com/wattsjmichael/GalaxyYear.git
-* _Open any of the files in the directory in your text editor for viewing/editing_
-* _Open the index.html file in your preferred browser or text editor preview function_
+* _To run test scripts that are located in _tests_/galaxyyear.test.js, run "npm run test" in the terminal_
 
 
 ## Specs

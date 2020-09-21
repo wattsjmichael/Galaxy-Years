@@ -12,6 +12,5 @@ $("form#age").submit(function (event){
 let earthYear = parseInt($("input#age").val());
 $("#earthAge").text(GalacticAge.earthYear);
 $(".result").show();
-console.log(earthYear);
 });
 });
