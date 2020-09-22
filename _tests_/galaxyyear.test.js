@@ -13,7 +13,7 @@ describe ('GalaxyAge', ()=> {
   test('should show how beforeEach() works',()=>{
   });
 
-  test('should return earth year age', () =>{
+  test('should return earth year age of 20', () =>{
     expect(youngAge.earthYear).toEqual(20);
   });
     
