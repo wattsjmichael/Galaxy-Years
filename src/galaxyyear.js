@@ -3,6 +3,9 @@ export default class GalacticAge {
   this.earthYear = earthYear;
 }
 
+
+
+
 mercuryAge() {
   let earthYear = this.earthYear;
   let mercuryYear = parseFloat(Math.abs((earthYear / .24).toFixed(2)));
@@ -51,10 +54,21 @@ jupiterLE() {
   let earthYear = this.earthYear;
   let jupiterLife = (6.75)-(parseFloat(earthYear / 11.86));
   let jupiterLifeExpect = Math.abs(jupiterLife.toFixed(2));
-  if (earthYear >= 80) {
+  if (this.earthYear >= 80) {
     return `Congrats! you are ${jupiterLifeExpect} jupiter years over life expectancy!`
   } else {
   return jupiterLifeExpect;
+  }
+}
+
+earthLE() {
+  let earthYear = this.earthYear;
+  let earthLife = (80) - (earthYear);
+  let earthLifeExpect = Math.abs(earthLife.toFixed(2));
+  if (this.earthYear >= 80) {
+    return `Congrats! you are ${earthLifeExpect} Earth years over life expectancy!`
+  } else {
+    return earthLifeExpect;
   }
 }
 }
