@@ -31,23 +31,36 @@ describe ('GalaxyAge', ()=> {
     expect(reusableGalaxyAge.jupiterAge()).toEqual(1.69);
   });
 
-  test("Should convert Earth Age of 20 to Mercury Life Expentancy Years (333.33 Mercury Years)", ()=>{
+  test("Should convert Earth Age of 20 to Mercury Life Expentancy Years (250.00 Mercury Years)", ()=>{
     expect(reusableGalaxyAge.mercuryLE()).toEqual(250.00);
   });
 
-  test("Should convert Earth Age of 20 to Venus Life Expentancy Years (129.03 Venus Years)", ()=>{
+  test("Should convert Earth Age of 20 to Venus Life Expentancy Years (96.77 Venus Years)", ()=>{
     expect(reusableGalaxyAge.venusLE()).toEqual(96.77);
   });
 
-  test("Should convert Earth Age of 20 to Mars Life Expentancy Years (42.55 Mars Years)", ()=>{
+  test("Should convert Earth Age of 20 to Mars Life Expentancy Years (31.91 Mars Years)", ()=>{
     expect(reusableGalaxyAge.marsLE()).toEqual(31.91);
   });
 
-  test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (6.75 Jupiter Years)", ()=>{
+  test("Should convert Earth Age of 20 to Jupiter Life Expentancy Years (5.06 Jupiter Years)", ()=>{
     expect(reusableGalaxyAge.jupiterLE()).toEqual(5.06);
   });
+});
 
+describe ('GalaxyAge', ()=> {
+  let oldAge;
+  beforeEach(()=>{
+    oldAge = new GalacticAge(90);
+
+  });
+    
   test("Should Return an Earth Age of 90 to be .84 jupiter years over life expectancy", ()=>{
-    expect(reusableGalaxyAge.jupiterLE()).toBe("Congrats! you are 0.84 jupiter years over life expectancy!");
+    expect(oldAge.jupiterLE()).toBe("Congrats! you are 0.84 jupiter years over life expectancy!");
     });
+
+    test("Should Return an Earth Age of 90 to be 10 Earth years over life expectancy", ()=>{
+      expect(oldAge.earthYear).toEqual(10);
+    })
+
 });
